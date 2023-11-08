@@ -1,0 +1,10 @@
+#include<graphics.h>
+#include<mmsystem.h>
+#pragma comment(lib,"winmm.lib")
+int main(void)
+{   initgraph(1000,800);
+    loadimage(0,L"src/bg.png")
+    mciSendString(L"play src/bg.mp3 repeat",0,0,0);
+    system("pause")
+    return 0;
+}
